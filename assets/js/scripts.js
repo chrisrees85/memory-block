@@ -14,7 +14,7 @@ startButton();
 
 function onClick() {
     // Renders the button inactive so the user can't keep calling onClick function
-    buttonDiv.innerHTML = '<button type="button" class="btn btn-primary btn-lg" id="play-btn">Timer Started</button>';
+    buttonDiv.innerHTML = '<button type="button" class="btn btn-primary btn-lg" id="play-btn">Start</button>';
 
     // Countdown timer shown in the button text
     // Once time is up the buttons function changes to check users attempt
@@ -87,13 +87,13 @@ function checkAttempt() {
     
     // Modal either gives a yes or no answer as to whether the user has succeeded
     if (score == tilesLength / 2) {
-        document.getElementById('modal-head').textContent = ('CONGRATULATIONS');
-        document.getElementById('modal-text').textContent = ('Your memory served you well');
-        modalBtn.innerHTML = '<button type="button" class="btn btn-secondary" onclick="location.reload();">Play Again</button>';
+        document.getElementById('modal-head').textContent = ('CONGRATULATIONS!');
+        document.getElementById('modal-text').textContent = ('You did it! why not do it again');
+        modalBtn.innerHTML = '<button type="button" class="btn btn-primary" onclick="location.reload();">Play Again</button>';
     }else {
-        document.getElementById('modal-head').textContent = ('OOPS, SORRY');
-        document.getElementById('modal-text').textContent = ('Would you like to try again or Start New Game');
-        modalBtn.innerHTML = '<button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="reveal();">Reveal</button>';
+        document.getElementById('modal-head').textContent = ('SORRY NOT THIS TIME!');
+        document.getElementById('modal-text').textContent = ('See why and try again');
+        modalBtn.innerHTML = '<button type="button" class="btn btn-primary" data-dismiss="modal" onclick="reveal();">Reveal</button>';
     }
     // resets the score to 0 to keep the users attempt accurate
     score = 0;
