@@ -1,0 +1,39 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.center{
+    text-align: center;
+}
+
+.board{
+  width:80vw;
+  margin: auto;
+}
+
+.tiles{
+  background-color: lightblue;
+  height:80px;
+  border-radius: 5px;
+  margin:1px;
+}
+
+.btn-right{
+  padding-right:10vw;
+  float:right;
+}
+
+#btn,
+#play-btn{
+  width:27vw;
+}
+
+.green{
+  background-color: green;
+}
+
+.modal-dialog{
+  padding-top:200px;
+}
