@@ -1,39 +1,94 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-.center{
-    text-align: center;
+body {
+  background-color: rgb(32, 32, 32);
+  background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
+  background-size: 10px 10px, 10px 10px, 10px 5px;
+  background-position: 0px 0px, 5px 5px, 0px 0px;
 }
 
-.board{
-  width:80vw;
+h1,h2, p{
+  color:white;
+}
+
+.navbar-dark{
+  background-color: rgba(0,0,0,0)!important;
+}
+
+.center {
+  text-align: center;
+}
+
+.main{
+  background-color: rgba(0,0,0,0);
+}
+
+.btn-lg{
+  width:60vw;
+  margin:auto;
+  border-radius: 10px;
+}
+
+.board {
+  width: 80vw;
+  height:calc(72vh + 18px);
   margin: auto;
+  border:5px solid white;
 }
 
-.tiles{
-  background-color: lightblue;
-  height:80px;
-  border-radius: 5px;
-  margin:1px;
+.block {
+  background-color: rgba(255,255,255,0.5);
+  height: 18vh;
+  border-radius: 10px;
+  margin: 1px;
 }
 
-.btn-right{
-  padding-right:10vw;
-  float:right;
+.btn-right {
+  margin-right: 10vw; 
+  float: right;
 }
 
 #btn,
-#play-btn{
-  width:27vw;
+#play-btn {
+  width: 27vw;
+  border-radius: 10px;
+  background-color: white;
+  color:black;
 }
 
-.green{
+.blue{
+  background-color: blue;
+  transform: rotateY(-0deg);
+  transition: transform 0.8s;
+}
+
+.green {
   background-color: green;
+  transform: rotateY(180deg);
+  transition: transform 0.8s;
 }
 
-.modal-dialog{
-  padding-top:200px;
+.modal-dialog {
+  padding-top: 200px;
+}
+
+.modal-content{
+  background-color: rgba(255,255,255,0.87);
+  border-radius: 10px;
+}
+
+#modal-head{
+  margin:auto;
+}
+
+.modal-text{
+  text-align: center;
+}
+
+.modal-footer{
+  margin: auto;
 }
